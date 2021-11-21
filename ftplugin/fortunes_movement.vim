@@ -51,4 +51,4 @@ call CountJump#Region#Motion#MakeBracketMotion('<buffer>', '', '', '^-- \?$', 0)
 call CountJump#TextObject#MakeWithCountSearch('<buffer>', 'f', 'i', 'V', '^-- \?$', '^-- \?$')
 call CountJump#TextObject#MakeWithCountSearch('<buffer>', 'f', 'a', 'V', '^-- \?$', '\ze\n-- \?$\|\%$')
 
-" vim: set sts=4 sw=4 noexpandtab ff=unix fdm=syntax :
+" vim: set ts=8 sts=4 sw=4 noexpandtab ff=unix fdm=syntax :
