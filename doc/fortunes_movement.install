@@ -11,3 +11,19 @@ DEPENDENCIES
 - Requires Vim 7.0 or higher. 
 - Requires the CountJump plugin (vimscript #3130), version 1.30. 
 
+CONFIGURATION
+The commands and text objects are only active when 'filetype' is set to
+"fortunes".
+You need to make sure that the filetype is properly detected, for example via
+the following fragment in .vim/filetype.vim: 
+    augroup filetypedetect
+        " Fortunes files. 
+        autocmd BufNewFile,BufRead fortunes.txt,*/fortunes/*.txt setf fortunes 
+    augroup END
+or manually set the filetype every time via 
+    :setf fortunes
+If you want to use this plugin also for other filetypes, e.g. "txt", create a
+file ftplugin/txt_movement.vim in your 'runtimepath' (usually ~/.vim) with the
+following contents: 
+    runtime! ftplugin/fortunes_movement.vim
+This is more maintainable than simply renaming fortunes_movement.vim. 
