@@ -1,0 +1,15 @@
+IDEAS:
+
+HISTORY:
+
+1.10	18-Dec-2010
+Switched definition of motion mappings from patterns to begin and end to a
+region of continguous lines defined by a non-matching pattern (representing the
+fortune separator line). This should make it more correct with corner cases.
+Requires CountJump version 1.30. 
+
+1.00	03-Aug-2010
+First published version. 
+
+0.01	03-Oct-2009
+Started development. 
